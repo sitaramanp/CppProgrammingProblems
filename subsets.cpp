@@ -67,28 +67,3 @@ vector<vector<int>> subsetsSolution3(vector<int> & nums)
 	}
 	return ret;
 }
-
-void printVecVec(vector<vector<int>> ivVec)
-{
-	for(auto &i: ivVec)
-	{
-		for(auto &val: i)
-		{
-			cout << val << " ";
-		}
-		cout << endl;
-	}
-}
-
-int main()
-{
-	vector<int> iVec = {1,2,3};
-	vector<vector<int>> ans1 = subsetsSolution1(iVec);
-	for_each(ans1.begin(), ans1.end(), [](vector<int>& iVec) { for_each(iVec.begin(), iVec.end(), [](int val) { cout << val <<" ";}); cout << endl; });
-	
-	vector<vector<int>> ans2 = subsetsSolution2(iVec);
-	for_each(ans2.begin(), ans2.end(), [](vector<int>& iVec) { for_each(iVec.begin(), iVec.end(), [](int val) { cout << val <<" ";}); cout << endl; });
-	
-	vector<vector<int>> ans3 = subsetsSolution3(iVec);
-	for_each(ans3.begin(), ans3.end(), [](vector<int>& iVec) { for_each(iVec.begin(), iVec.end(), [](int val) { cout << val <<" ";}); cout << endl; });
-}
