@@ -1,2 +1,2 @@
-# CppProgrammingProblems
-C++ solution to some of the commonly found programming problems in the net
+# ProgrammingProblems
+C++ / Python solutions to frequently found programming problems
