@@ -1,6 +1,6 @@
-//replace each blank in a string with “%20”.
+//replace each blank in a string with %20.
 //
-//“We%20are%20happy.” if the input is “We are happy.”.
+//"We%20are%20happy". if the input is "We are happy."
 
 #include<iostream>
 #include<string>
@@ -22,7 +22,7 @@ void replaceString(string& str)
     int newEnd = 1+str.length() + 2*numSpace ;
     str.resize(newEnd);
     
-    //str[newEnd] = '\0';
+    str[newEnd] = '\0';
     int j = oldEnd-1;
     for(int i = newEnd-1; i >=0; --j, --i)
     {
