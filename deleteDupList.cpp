@@ -1,4 +1,4 @@
-// Delete duplicate from list. Result will be list where all elements are distinct
+// Delete duplicate from SORTED linked list. Result will be list where all elements are distinct
 
 #include<iostream>
 
