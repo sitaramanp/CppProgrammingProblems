@@ -23,7 +23,11 @@ Node* deleteDup(Node* head)
 	{
 		q=p;
 		while(p && p->val == q->val)
+                {
+			Node* r = p;
 			p = p->next;
+			delete r;
+		}
 		q->next = p;
 	}
 	return head;
